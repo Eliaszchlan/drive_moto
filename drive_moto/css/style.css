@@ -1,0 +1,170 @@
+html{
+    box-sizing: border-box;
+}
+
+*,* ::before, *::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+body{
+    color: #2F3035;
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15;
+    margin: 0 auto;
+}
+
+/*header_top*/
+
+.header_top_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 53px 46;
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.logo{
+    padding: 25px;
+}
+
+.menu_item{
+    display: inline-block;
+}
+
+.menu_item + .menu_item {
+    padding-left: 50px;
+}
+
+.header_box{
+    display: flex;
+}
+
+.header_address{
+    position: relative;
+    margin-right: 60px;
+    width: 265px;
+    padding-left: 30px;
+}
+
+.header_address::before{
+    position: absolute;
+    content: "";
+    background-image: url(../images/address.svg);
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -10px;
+}
+
+.user_list{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.user_list_item{
+   padding-right: 10px;
+}
+
+.cart{
+    position: relative;
+}
+
+.basket_num{
+    position: absolute;
+    font-family: 'SFProDisplay-Medium', sans-serif;
+    color: #ffffff;
+    background-color: #1C62CD;
+    border-radius: 50%;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+    top: 10px;
+    left: 22px;
+}
+
+/*header_bottom*/
+
+
+.menu_categories{
+    display: flex;
+    justify-content: space-between;
+    background: #F0F0F4;
+    padding: 15px 0 14px;
+} 
+
+.menu_categories_link{
+    transition: font-weight .3s;
+    font-weight: 400;
+    padding: 15px 0 14px;
+    transform: translate(-50% -50%);
+}
+
+.menu_categories_link::before{
+    content: "";
+    position: absolute; 
+    width: 0;
+    left: auto;
+    background-color: #1C62CD;
+    height: 3px;
+    bottom: -2px;
+    transition: all .3s;
+    right: 0;
+}
+
+.menu_categories_link:hover{
+    font-family: 'SFProDisplay-Semibold', sans-serif;
+    /* font-weight: 600; */
+    border-bottom: 3px solid #1C62CD;
+    color: #1C62CD;
+}
+
+
+
+
+
+
+
+
+/*section upper advertisement */
+
+/* .upper_advertisement{
+    display: flex;
+    border: 1px solid #000;
+    padding-top: 70px;
+}
+
+.upper_advertisement_left{
+    background-image: url(../images/speed_extreme.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
